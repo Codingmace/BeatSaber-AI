@@ -1,0 +1,3 @@
+Location, Song name, Rating, BPM, Foldername
+BeatSaver, Shut Up and Dance - WALK THE MOON, 96%, 128, 2114
+BeatSaver, League of Legends - Legends never die (ft. Against The Current), 96%, 140, 66e6
