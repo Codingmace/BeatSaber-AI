@@ -53,7 +53,7 @@ public class Setup {
 //        System.out.println(ja.size());
         Object notes[] = ja.toArray();
         notesFrequencyAnalysis(notes);
-        int timeLength = Long2Int(((JSONObject)notes[notes.length - 1]).get("_time"));
+        int timeLength = Long2Int(((JSONObject)notes[notes.length - 1]).get("_time")); // Solve the problem of this is a double
         System.out.println(timeLength);
         String segments[] = segmentSong(timeLength, notes);
 //        for(int i =0; i < 10; i++) {
@@ -116,16 +116,23 @@ public class Setup {
         	 * 0	1	2	3
         	 */
         	int hashed = 12 * direction + gridPosition; // My frequency counter
-        	if(color == 0) {// Red
-        		red[pos] += hashed + " ";
-        	} else if(color == 1) { // Blue
-        		blue[pos] += hashed + " ";
+        	String hash = "";
+        	if (hashed <= 9) {
+        		hash = "0" + hashed;
+        	} else {
+        		hash = "" + hashed;
         	}
-        	both[pos] += hashed + " ";
+        	if(color == 0) {// Red
+        		red[pos] += hash + " ";
+        	} else if(color == 1) { // Blue
+        		blue[pos] += hash + " ";
+        	}
+        	both[pos] += hash + " ";
         }
         
         System.out.println(Arrays.toString(red));
         System.out.println(Arrays.toString(blue));
+        System.out.println(Arrays.toString(both));
 		return both;
 	}
 
