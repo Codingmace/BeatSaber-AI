@@ -2,7 +2,7 @@ package digest;
 
 class bms {
 	private String _beatmapCharacteristicName;
-	private beatmap [] _difficultyBeatmaps;
+	public beatmap [] _difficultyBeatmaps;
 	
 	public String getMapCharacteristicName() {
 		return _beatmapCharacteristicName;

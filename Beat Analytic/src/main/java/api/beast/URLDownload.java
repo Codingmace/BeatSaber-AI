@@ -25,6 +25,10 @@ public class URLDownload {
 		}
 		findLinks(str);
 		downloadZip("21ac2");
+		// Extract the Zip
+		// Remove the uneccessary files
+		// Call the compare to find the duplicate files
+		// Call the writer to write the information on each one.
 	}
 
 	private static void findLinks(String file) {

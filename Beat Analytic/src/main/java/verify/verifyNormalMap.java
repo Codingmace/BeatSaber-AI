@@ -13,7 +13,6 @@ public class verifyNormalMap {
 	 */
 	public static void main(String[] args) {
 
-
 	}
 
 }

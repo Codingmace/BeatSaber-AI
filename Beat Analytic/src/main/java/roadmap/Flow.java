@@ -12,7 +12,7 @@ public class Flow {
 	 * Score based on how it follows them
 	 * Modify for a better version
 	 * - Creates lesser versions by taking away notes
-	 * - Lowers the difficulty and rereleases
+	 * - Lowers the difficulty and re releases
 	 * - Releases same version by taking away errors
 	 * Send the new one to AI machine
 	 * - Fix the audio if there is no issue
