@@ -4,25 +4,11 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-public class grab {}
-/*
-	private Doc docs[];
-
-	public Doc[] getDocs() {
-		return docs;
-	}
-
-	public void setDocs(Doc docs[]) {
-		this.docs = docs;
-	}
-}
-
-
-@Getter
-@Setter
-class Doc {
+@Data
+public class Entry {
 	private String id;
 	private String name;
+	private String description;
 	private Uploader uploader;
 	private MetaData metadata;
 	private Stats stats;
@@ -34,6 +20,7 @@ class Doc {
 	private String createdAt;
 	private String updatedAt;
 	private String lastPublishedAt;
+	private String[] tags;
 
 	public String getId() {
 		return id;
@@ -107,6 +94,7 @@ class Stats {
 @Setter
 class Versions {
 	private String hash;//
+	private String key;
 	private String state;//
 	private String createdAt;//
 	private int sageScore;
@@ -149,4 +137,3 @@ class Parity {
 	private int warns;
 	private int resets;
 }
-*/

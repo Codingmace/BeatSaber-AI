@@ -1,7 +1,0 @@
-Writting the CSV file
-Grabbing Before 2022-02-17T21%3A56%3A39Z
-Written all of 1.json
-com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2949 column 21 path $
-Cannot read the array length because the return value of "api.saver.grab.getDocs()" is null
-Grabbing Before 2022-02-17T20%3A00%3A00Z
-Written all of 2.json

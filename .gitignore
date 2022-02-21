@@ -34,3 +34,6 @@ BeastSaber API/.gitignore
 Beat Analytic/.gitignore
 BeatSaver API/.gitignore
 README.md
+Beat Analytic/BJSON/*.json
+Beat Analytic/html/*.html
+Beat Analytic/src/main/resources/Old Extra Files/*
