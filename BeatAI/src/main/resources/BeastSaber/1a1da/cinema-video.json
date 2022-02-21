@@ -1,0 +1,162 @@
+{
+  "videoID": "mFNASgBtp3M",
+  "title": "KLOUD - TAKE",
+  "author": "KLOUD",
+  "videoFile": "KLOUD - TAKE.mp4",
+  "duration": 204,
+  "offset": -1712,
+  "disableDefaultModifications": true,
+  "allowCustomPlatform": false,
+  "disableBigMirrorOverride": true,
+  "configByMapper": true,
+  "screenPosition": {"x": 0.0,"y": 6,"z": 40},
+  "screenHeight": 9,
+  "forceEnvironmentModifications": true,
+  "transparency": false,
+  "vignette": {
+    "type": "rectangular",
+    "radius": 0.95,
+    "softness": 0.05
+  },
+  "environment": [
+    {
+      "name": "SmallTrackLaneRing(Clone)",
+      "scale": {"x": 2.5, "y": 2.5, "z": 0}
+    },
+    {
+      "name": "GlowLineL (1)",
+      "position": {"x": -12, "y": 1.5, "z": -20},
+      "scale": {"x": 1, "y": 1, "z": 1}
+    }, 
+    {
+      "name": "GlowLineR (1)",
+      "position": {"x": 12, "y": 1.5, "z": -20},
+      "scale": {"x": 1, "y": 1, "z": 1}
+    },
+    {
+      "name": "GlowLineL",
+      "scale": {"x": 1, "y": 1, "z": 1}
+    }, 
+    {
+      "name": "GlowLineR",
+      "scale": {"x": 1, "y": 1, "z": 1}
+    },
+    {
+      "name": "MonstercatLogoL",
+      "active": false
+    },
+    {
+      "name": "MonstercatLogoR",
+      "active": false
+    },
+    {
+      "name": "GlowTopLine (5)",
+      "position": {"x": 0, "y": 12, "z": 0},
+      "scale": {"x": 2, "y": 2, "z": 2}
+    },
+    {
+      "name": "GlowTopLine (6)",
+      "position": {"x": -3, "y": 12, "z": 0},
+      "scale": {"x": 2, "y": 2, "z": 2}
+    },
+    {
+      "name": "GlowTopLine (7)",
+      "position": {"x": 3, "y": 12, "z": 0},
+      "scale": {"x": 2, "y": 2, "z": 2}
+    },
+    {
+      "name": "GlowTopLine (8)",
+      "position": {"x": -6, "y": 12, "z": 0},
+      "scale": {"x": 2, "y": 2, "z": 2}
+    },
+    {
+      "name": "GlowTopLine (9)",
+      "position": {"x": 6, "y": 12, "z": 0},
+      "scale": {"x": 2, "y": 2, "z": 2}
+    },
+    {
+      "name": "GlowTopLine (10)",
+      "position": {"x": -9, "y": 12, "z": 1},
+      "scale": {"x": 2, "y": 2, "z": 2}
+    },
+    {
+      "name": "GlowTopLine (11)",
+      "position": {"x": 9, "y": 12, "z": 1},
+      "scale": {"x": 2, "y": 2, "z": 1}
+    },{
+      "name": "Laser (4)",
+      "position": {"x": 12.4, "y": 10, "z": 9.7},
+      "scale": {"x": 1, "y": 1, "z": 1},
+      "rotation": {"x": 0, "y": 0, "z": -30}
+    },{
+      "name": "Laser (5)",
+      "position": {"x": -12.4, "y": 10, "z": 9.7},
+      "scale": {"x": 1, "y": 1, "z": 1},
+      "rotation": {"x": 0, "y": 0, "z": 30}
+    },{
+      "name": "Laser (7)",
+      "position": {"x": 12.4, "y": 10, "z": 9.5},
+      "scale": {"x": 1, "y": 1, "z": 1},
+      "rotation": {"x": 0, "y": 0, "z": -30}
+    },{
+      "name": "Laser (8)",
+      "position": {"x": -12.4, "y": 10, "z": 9.5},
+      "scale": {"x": 1, "y": 1, "z": 1},
+      "rotation": {"x": 0, "y": 0, "z": 30}
+    },{
+      "name": "Laser (9)",
+      "position": {"x": 12.4, "y": 10, "z": 9.3},
+      "scale": {"x": 1, "y": 1, "z": 1},
+      "rotation": {"x": 0, "y": 0, "z": -30}
+    },{
+      "name": "Laser (10)",
+      "position": {"x": -12.4, "y": 10, "z": 9.3},
+      "scale": {"x": 1, "y": 1, "z": 1},
+      "rotation": {"x": 0, "y": 0, "z": 30}
+    },{
+      "name": "Laser (11)",
+      "position": {"x": 12.4, "y": 10, "z": 9.1},
+      "scale": {"x": 1, "y": 1, "z": 1},
+      "rotation": {"x": 0, "y": 0, "z": -30}
+    },{
+      "name": "Laser (12)",
+      "position": {"x": -12.4, "y": 10, "z": 9.1},
+      "scale": {"x": 1, "y": 1, "z": 1},
+      "rotation": {"x": 0, "y": 0, "z": 30}
+    },
+    {
+      "name": "FarBuildings",
+      "active": false
+    },{
+      "name": "Spectrograms",
+      "active": false
+    },
+    {
+      "name": "Construction",
+      "parentName": "Environment",
+      "active": true
+    },{
+      "name": "TrackMirror",
+      "active": true
+    },{
+      "name": "VConstruction",
+      "position": {"x": 0, "y": 2, "z": -1},
+      "scale": {"x": 1, "y": 1, "z": 0.7}
+    }, {
+      "name": "RotatingLasersPair",
+      "rotation": {"x": -15, "y": 0, "z": 180}
+    }, {
+      "name": "RotatingLasersPair (1)",
+      "rotation": {"x": -15, "y": 0, "z": 180}
+    }, {
+      "name": "RotatingLasersPair (2)",
+      "rotation": {"x": -15, "y": 0, "z": 180}
+    }, {
+      "name": "RotatingLasersPair (3)",
+      "rotation": {"x": -15, "y": 0, "z": 180}
+    }, {
+      "name": "RotatingLasersPair (4)",
+      "rotation": {"x": -15, "y": 0, "z": 180}
+    }
+    ]
+}

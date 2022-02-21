@@ -31,9 +31,4 @@ hs_err_pid*
 *.jfif
 *.wav
 vocal-remover-v1.zip
-Beat Analytic/.gitignore
 README.md
-Beat Analytic/BJSON/*.json
-Beat Analytic/html/*.html
-Beat Analytic/src/main/resources/Individual/*
-Beat Analytic/src/main/resources/Old Extra Files/*

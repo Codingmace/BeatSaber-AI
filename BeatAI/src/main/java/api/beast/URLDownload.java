@@ -19,20 +19,21 @@ public class URLDownload {
 	 * Going from oldest to newest for downloading.
 	 */
 	public static void main(String args[]) throws Exception {
+		String writtingDirs  = setupDirs();
 		long ts = System.currentTimeMillis() / 1000;
 		String eventFile = "src/main/resources/eventLogs/Event" + ts + ".txt";
 		FileWriter fw = new FileWriter(new File(eventFile));
-		String endline = "\n";
-
+		String endl = "\n";
+		fw.write(writtingDirs + endl);
 		/* Download the HTML */
-		int startPage = 562;
+		int startPage = 574;
 		int endPage = 2897;
 		String baseUrl = "https://bsaber.com/songs/new/page/";
-		fw.write("Downloading From page " + startPage + " to " + endPage + endline);
+		fw.write("Downloading From page " + startPage + " to " + endPage + endl);
 		for (; startPage < endPage; startPage++) {
 			String full = "";
 			String FILE_URL = baseUrl + startPage;
-			String FILE_NAME = "html/" + startPage + ".html";
+			String FILE_NAME = "src/main/resources/html/" + startPage + ".html";
 			try {
 				BufferedInputStream in = new BufferedInputStream(new URL(FILE_URL).openStream());
 				FileOutputStream fileOutputStream = new FileOutputStream(FILE_NAME);
@@ -47,7 +48,7 @@ public class URLDownload {
 				System.out.println("FUCK");
 			}
 			ArrayList<String> links = findLinks(full); // Has all download links
-			fw.write("Done downloading page " + startPage + endline);
+			fw.write("Done downloading page " + startPage + endl);
 			fw.flush();
 
 			/*
@@ -57,21 +58,75 @@ public class URLDownload {
 				String curKey = getKey(links.get(i));
 				fw.write("Key: " + curKey + " download");
 				if (downloadZip(curKey)) {
-					fw.write(" is successful" + endline);
+					fw.write(" is successful" + endl);
 				} else {
-					fw.write(" is not successful" + endline);
+					fw.write(" is not successful" + endl);
 				}
 				fw.write("Key: " + curKey + " unzip");
 				if (unZip(curKey)) {
-					fw.write(" is successful" + endline);
+					fw.write(" is successful" + endl);
 					/* Move file if successful */
 					deleteZip(curKey);
 				} else {
-					fw.write(" is not successful" + endline);
+					fw.write(" is not successful" + endl);
 				}
 				fw.flush();
 			}
 		}
+	}
+
+	/*
+	 * Creates the default directories to make sure of no issues
+	 */
+	private static String setupDirs() {
+		String results = "";
+		String endl = "\n";
+		// src/main/resources/eventLogs/Event
+		// src/main/resources/BeastSaber/
+		// 	Path dest = Paths.get(baseFolder + "Delete/" + zipFile + ".zip");
+		// "src/main/resources/html/"
+		String basePath = "src/main/resources/";
+		File f1 = new File(basePath + "eventLogs");
+		File f2 = new File(basePath + "BeastSaber");
+		File f3 = new File(basePath + "html");
+		File f4 = new File(basePath + "Delete");
+		if(f1.exists()) {
+			results += "eventLogs Folder Exists" + endl;
+		} else {
+			if(f1.mkdir()) {
+				results += "creating eventLogs Folder" + endl;				
+			} else {
+				results += "Problem creating eventLogs Folder" + endl;
+			}
+		}
+		if(f2.exists()) {
+			results += "BeastSaber Folder Exists" + endl;
+		} else {
+			if(f2.mkdir()) {
+				results += "creating BeastSaber Folder" + endl;				
+			} else {
+				results += "Problem creating BeastSaber Folder" + endl;
+			}
+		}
+		if(f3.exists()) {
+			results += "html Folder Exists" + endl;
+		} else {
+			if(f3.mkdir()) {
+				results += "creating html Folder" + endl;				
+			} else {
+				results += "Problem creating html Folder" + endl;
+			}
+		}
+		if(f4.exists()) {
+			results += "Delete Folder Exists" + endl;
+		} else {
+			if(f4.mkdir()) {
+				results += "creating Delete Folder" + endl;				
+			} else {
+				results += "Problem creating Delete Folder" + endl;
+			}
+		}
+		return results;
 	}
 
 	private static String getKey(String url) {
