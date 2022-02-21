@@ -1,8 +1,7 @@
-package api.beast;
+    package api.beast;
 
 import java.io.BufferedInputStream;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,7 +9,6 @@ import static java.nio.file.StandardCopyOption.*;
 import java.nio.file.*;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -32,7 +30,7 @@ public class URLDownload {
 		String endline = "\n";
 
 		/* Download the HTML */
-		int startPage = 180;
+		int startPage = 562;
 		int endPage = 2897;
 		String baseUrl = "https://bsaber.com/songs/new/page/";
 		fw.write("Downloading From page " + startPage + " to " + endPage + endline);
@@ -68,7 +66,7 @@ public class URLDownload {
 				if (unZip(curKey)) {
 					fw.write(" is successful" + endline);
 					/* Move file if successful */
-					moveZip(curKey);
+					deleteZip(curKey);
 				} else {
 					fw.write(" is not successful" + endline);
 				}

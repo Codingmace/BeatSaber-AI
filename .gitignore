@@ -30,10 +30,10 @@ hs_err_pid*
 *.png
 *.jfif
 *.wav
-BeastSaber API/.gitignore
+vocal-remover-v1.zip
 Beat Analytic/.gitignore
-BeatSaver API/.gitignore
 README.md
 Beat Analytic/BJSON/*.json
 Beat Analytic/html/*.html
+Beat Analytic/src/main/resources/Individual/*
 Beat Analytic/src/main/resources/Old Extra Files/*

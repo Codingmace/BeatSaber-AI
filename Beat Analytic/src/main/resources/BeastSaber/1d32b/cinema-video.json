@@ -1,0 +1,22 @@
+{
+    "videoID": "eHcHjcV8SNY",
+    "title": "【東方ヴォーカルPV】無意識レクイエム （Vo:あよ）※閲覧注意【森羅万象公式】",
+    "author": "森羅万象/Shinra-Bansho",
+    "videoFile": "【東方ヴォーカルPV】無意識レクイエム （Vo_あよ）※閲覧注意【森羅万象公式】.mp4",
+    "duration": 293,
+    "offset": -160,
+    "configByMapper": true,
+    "environmentName": "PanicEnvironment",
+    "screenPosition": {
+        "x": 0,
+        "y": 11,
+        "z": 66
+    },
+    "screenRotation": {
+        "x": -11,
+        "y": 0,
+        "z": 0
+    },
+    "screenHeight": 22,
+	"disableDefaultModifications": true
+}

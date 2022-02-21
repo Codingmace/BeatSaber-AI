@@ -33,7 +33,7 @@ public class mainGrab {
 //		System.out.println(beforeTime.substring(0, 10));
 //		System.out.println(beforeTime.substring(11, 13));
 
-		int con = 0;
+		int con = 13545;
 		String endl = "\n";
 		FileWriter fw = new FileWriter(new File(eventFile));
 //		String records = "src/main/resources/entries.csv";
@@ -111,8 +111,8 @@ public class mainGrab {
 //				fw.append("Dealing with zip" + endl);
 				if(downloadZip(entity.getId(), downloadUrl.substring(index))) {
 					if(unZip(entity.getId())) {
-						if(moveZip(entity.getId())) {
-							fw.append(entity.getId() + " Downloaded, Unzip, and Moved - " + downloadUrl.substring(index) + endl);
+						if(deleteZip(entity.getId())) {
+							fw.append(entity.getId() + " Downloaded, Unzip, and Deleted - " + downloadUrl.substring(index) + endl);
 						} else {
 							fw.append("Failed to move Zip" + endl);
 						}
@@ -223,6 +223,19 @@ public class mainGrab {
 			}
 			Files.move(source, dest, REPLACE_EXISTING);
 //			Files.delete(source);
+		} catch (IOException e) {
+			System.out.println("DAMNIT");
+			return false;
+		}
+		return true;
+
+	}
+
+	private static boolean deleteZip(String zipFile) {
+		String baseFolder = "src/main/resources/BeatSaver/";
+		Path source = Paths.get(baseFolder + zipFile + ".zip");
+		try {
+			Files.delete(source);
 		} catch (IOException e) {
 			System.out.println("DAMNIT");
 			return false;
