@@ -1,13 +1,16 @@
 package api.beast;
 
+import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
+
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import static java.nio.file.StandardCopyOption.*;
-import java.nio.file.*;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -18,15 +21,16 @@ public class URLDownload {
 	/*
 	 * Going from oldest to newest for downloading.
 	 */
+
 	public static void main(String args[]) throws Exception {
-		String writtingDirs  = setupDirs();
+		String writtingDirs = setupDirs();
 		long ts = System.currentTimeMillis() / 1000;
 		String eventFile = "src/main/resources/eventLogs/Event" + ts + ".txt";
 		FileWriter fw = new FileWriter(new File(eventFile));
 		String endl = "\n";
 		fw.write(writtingDirs + endl);
 		/* Download the HTML */
-		int startPage = 574;
+		int startPage = 1113;
 		int endPage = 2897;
 		String baseUrl = "https://bsaber.com/songs/new/page/";
 		fw.write("Downloading From page " + startPage + " to " + endPage + endl);
@@ -86,38 +90,38 @@ public class URLDownload {
 		File f2 = new File(basePath + "BeastSaber");
 		File f3 = new File(basePath + "html");
 		File f4 = new File(basePath + "Delete");
-		if(f1.exists()) {
+		if (f1.exists()) {
 			results += "eventLogs Folder Exists" + endl;
 		} else {
-			if(f1.mkdir()) {
-				results += "creating eventLogs Folder" + endl;				
+			if (f1.mkdir()) {
+				results += "creating eventLogs Folder" + endl;
 			} else {
 				results += "Problem creating eventLogs Folder" + endl;
 			}
 		}
-		if(f2.exists()) {
+		if (f2.exists()) {
 			results += "BeastSaber Folder Exists" + endl;
 		} else {
-			if(f2.mkdir()) {
-				results += "creating BeastSaber Folder" + endl;				
+			if (f2.mkdir()) {
+				results += "creating BeastSaber Folder" + endl;
 			} else {
 				results += "Problem creating BeastSaber Folder" + endl;
 			}
 		}
-		if(f3.exists()) {
+		if (f3.exists()) {
 			results += "html Folder Exists" + endl;
 		} else {
-			if(f3.mkdir()) {
-				results += "creating html Folder" + endl;				
+			if (f3.mkdir()) {
+				results += "creating html Folder" + endl;
 			} else {
 				results += "Problem creating html Folder" + endl;
 			}
 		}
-		if(f4.exists()) {
+		if (f4.exists()) {
 			results += "Delete Folder Exists" + endl;
 		} else {
-			if(f4.mkdir()) {
-				results += "creating Delete Folder" + endl;				
+			if (f4.mkdir()) {
+				results += "creating Delete Folder" + endl;
 			} else {
 				results += "Problem creating Delete Folder" + endl;
 			}
@@ -154,7 +158,8 @@ public class URLDownload {
 	private static boolean downloadZip(String key) {
 		String baseURL = "https://api.beatsaver.com/download/key/";
 		String pageUrl = baseURL + key;
-		String fold = "src/main/resources/BeastSaber/";
+		String fold = "Z:\\BS Files\\Beast1\\";
+//		String fold = "src/main/resources/BeastSaber/";
 		String filename = fold + key + ".zip";
 		try {
 			BufferedInputStream in = new BufferedInputStream(new URL(pageUrl).openStream());
@@ -174,7 +179,8 @@ public class URLDownload {
 	}
 
 	private static boolean unZip(String zipFile) {
-		String baseFolder = "src/main/resources/BeastSaber/";
+		String baseFolder = "Z:\\BS Files\\Beast1\\";
+//		String baseFolder = "src/main/resources/BeastSaber/";
 		String source = baseFolder + zipFile + ".zip";
 		String target = baseFolder + zipFile;
 		try {
@@ -203,7 +209,8 @@ public class URLDownload {
 	}
 
 	private static boolean deleteZip(String zipFile) {
-		String baseFolder = "src/main/resources/BeastSaber/";
+		String baseFolder = "Z:\\BS Files\\Beast1\\";
+//		String baseFolder = "src/main/resources/BeastSaber/";
 		Path source = Paths.get(baseFolder + zipFile + ".zip");
 		try {
 			Files.delete(source);

@@ -1,10 +1,10 @@
 package api.saver;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class Entry {
 	private String id;
 	private String name;
@@ -45,7 +45,8 @@ public class Entry {
 	}
 }
 
-@Data
+@Getter
+@Setter
 class Uploader {
 	private int id;
 	private String name;

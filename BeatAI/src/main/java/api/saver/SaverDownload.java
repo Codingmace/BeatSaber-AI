@@ -18,19 +18,21 @@ import com.google.gson.GsonBuilder;
 
 import net.lingala.zip4j.ZipFile;
 
-public class mainGrab {
+public class SaverDownload {
 
 	/*
 	 * Documentation https://api.beatsaver.com/docs/index.html?url=./swagger.json#/
 	 * Grabs the Map based on the ID
 	 */
 	public static void main(String[] args) throws Exception {
-		String writtingDirs  = setupDirs();
+		String writtingDirs = setupDirs();
 		long ts = System.currentTimeMillis() / 1000;
 		String eventFile = "src/main/resources/eventLogs/Call" + ts + ".txt";
-		int con = 13545;
+		int con = 15106;
 		String endl = "\n";
 		FileWriter fw = new FileWriter(new File(eventFile));
+		fw.write(writtingDirs + endl);
+		fw.flush();
 		while (con <= 2238032) {
 			String baseUrl = "https://api.beatsaver.com/maps/id/";
 			baseUrl += Integer.toHexString(con);
@@ -88,6 +90,7 @@ public class mainGrab {
 		}
 
 	}
+
 	/*
 	 * Creates the default directories to make sure of no issues
 	 */
@@ -99,44 +102,45 @@ public class mainGrab {
 		File f2 = new File(basePath + "BeatSaver");
 		File f3 = new File(basePath + "Individual");
 		File f4 = new File(basePath + "Delete");
-		if(f1.exists()) {
+		if (f1.exists()) {
 			results += "eventLogs Folder Exists" + endl;
 		} else {
-			if(f1.mkdir()) {
-				results += "creating eventLogs Folder" + endl;				
+			if (f1.mkdir()) {
+				results += "creating eventLogs Folder" + endl;
 			} else {
 				results += "Problem creating eventLogs Folder" + endl;
 			}
 		}
-		if(f2.exists()) {
+		if (f2.exists()) {
 			results += "BeatSaver Folder Exists" + endl;
 		} else {
-			if(f2.mkdir()) {
-				results += "creating BeatSaver Folder" + endl;				
+			if (f2.mkdir()) {
+				results += "creating BeatSaver Folder" + endl;
 			} else {
 				results += "Problem creating BeatSaver Folder" + endl;
 			}
 		}
-		if(f3.exists()) {
+		if (f3.exists()) {
 			results += "Individual Folder Exists" + endl;
 		} else {
-			if(f3.mkdir()) {
-				results += "creating Individual Folder" + endl;				
+			if (f3.mkdir()) {
+				results += "creating Individual Folder" + endl;
 			} else {
 				results += "Problem creating Individual Folder" + endl;
 			}
 		}
-		if(f4.exists()) {
+		if (f4.exists()) {
 			results += "Delete Folder Exists" + endl;
 		} else {
-			if(f4.mkdir()) {
-				results += "creating Delete Folder" + endl;				
+			if (f4.mkdir()) {
+				results += "creating Delete Folder" + endl;
 			} else {
 				results += "Problem creating Delete Folder" + endl;
 			}
 		}
 		return results;
 	}
+
 	private static boolean downloadZip(String key, String zipName) {
 		String baseURL = "https://na.cdn.beatsaver.com/";
 		String pageUrl = baseURL + zipName;

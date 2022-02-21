@@ -1,6 +1,9 @@
 package csv;
-import lombok.*;
 
+import lombok.Getter;
+import lombok.Setter;
+
+/* Goal is to get good stats on the parts of each map */
 @Getter
 @Setter
 public class SongVar {
@@ -32,7 +35,7 @@ public class SongVar {
 	private long na6p;
 	private long na7p;
 	private long na8p;
-	private long np0; // Note Placement 
+	private long np0; // Note Placement
 	private long np1;
 	private long np2;
 	private long np3;
