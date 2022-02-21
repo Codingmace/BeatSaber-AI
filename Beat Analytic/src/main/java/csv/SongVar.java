@@ -1,5 +1,8 @@
 package csv;
+import lombok.*;
 
+@Getter
+@Setter
 public class SongVar {
 	private String Name;
 	private String Artist;

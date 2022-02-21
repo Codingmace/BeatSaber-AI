@@ -24,6 +24,12 @@ hs_err_pid*
 
 # My error resources
 *.dat
+*.egg
+*.jpg
+*.jpeg
+*.png
+*.jfif
+*.wav
 BeastSaber API/.gitignore
 Beat Analytic/.gitignore
 BeatSaver API/.gitignore

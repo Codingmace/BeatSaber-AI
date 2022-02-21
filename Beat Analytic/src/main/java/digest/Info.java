@@ -1,6 +1,10 @@
 package digest;
 
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 class Info {
 	
 	private String _version;
@@ -21,6 +25,7 @@ class Info {
 	public Object _customData;
 	public bms []_difficultyBeatmapSets;
 	
+	/*
 	public String getVersion() {
 		return _version;
 	}
@@ -66,6 +71,7 @@ class Info {
 	public String getSongTimeOffset() {
 		return _songTimeOffset;
 	}
+	*/
 
 
 }

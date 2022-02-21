@@ -1,0 +1,89 @@
+Writting the CSV file
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 1.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 2.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 3.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 4.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 5.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 6.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 7.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 8.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 9.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 10.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 11.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 12.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 13.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 14.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 15.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 16.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 17.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 18.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 19.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 20.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 21.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 22.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 23.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 24.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 25.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 26.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 27.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 28.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 29.json
+java.lang.NumberFormatException: Expected an int but was 22.75 at line 1677 column 41 path $.docs[8].versions[0].diffs[0].njs
+Grabbing Before 2022-02-17T21%3A56%3A39Z

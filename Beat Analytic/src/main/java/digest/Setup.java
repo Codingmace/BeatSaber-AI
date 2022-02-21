@@ -24,8 +24,8 @@ public class Setup {
 		}
 		ArrayList<String> keepFile = new ArrayList<String>();
 		keepFile.add("info.dat");
-		keepFile.add(x.getSongFilename());
-		keepFile.add(x.getCoverImage());
+//		keepFile.add(x.getSongFilename());
+//		keepFile.add(x.getCoverImage());
 		
 		bms a = x._difficultyBeatmapSets[0];
 		beatmap b[] = a._difficultyBeatmaps;

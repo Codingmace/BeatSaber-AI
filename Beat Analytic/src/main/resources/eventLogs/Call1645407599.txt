@@ -1,0 +1,66 @@
+Writting the CSV file
+Grabbing Before 2022-02-17T21%3A56%3A39Z
+Written all of 1.json
+JSON document was not fully consumed.
+Grabbing Before 2022-02-17T20%3A00%3A00Z
+Written all of 2.json
+com.google.gson.stream.MalformedJsonException: Expected ':' at line 97 column 15 path $.docs[1].sta   }
+            ],
+            
+Grabbing Before 2022-02-17T19%3A00%3A00Z
+Written all of 3.json
+com.google.gson.stream.MalformedJsonException: Expected ':' at line 84 column 23 path $.docs[1].metadata.43.jpg"
+Grabbing Before 2022-02-17T18%3A00%3A00Z
+Written all of 4.json
+com.google.gson.stream.MalformedJsonException: Expected name at line 89 column 9 path $.docs[1].metadata
+Grabbing Before 2022-02-17T17%3A00%3A00Z
+Written all of 5.json
+com.google.gson.stream.MalformedJsonException: Unterminated object at line 110 column 22 path $.docs[0].versions[0].diffs[2].paritySummary
+Grabbing Before 2022-02-17T16%3A00%3A00Z
+Written all of 6.json
+com.google.gson.stream.MalformedJsonException: Expected name at line 96 column 17 path $.docs[1].stats.downloads
+Grabbing Before 2022-02-17T15%3A00%3A00Z
+Written all of 7.json
+com.google.gson.stream.MalformedJsonException: Expected ':' at line 104 column 13 path $.docs[1].versions[0].
+Grabbing Before 2022-02-17T14%3A00%3A00Z
+Written all of 8.json
+com.google.gson.stream.MalformedJsonException: Unterminated object at line 95 column 14 path $.docs[1].stats
+Grabbing Before 2022-02-17T13%3A00%3A00Z
+Written all of 9.json
+com.google.gson.stream.MalformedJsonException: Unterminated object at line 96 column 10 path $.docs[1].stats.score
+Grabbing Before 2022-02-17T12%3A00%3A00Z
+Written all of 10.json
+com.google.gson.stream.MalformedJsonException: Expected name at line 63 column 15 path $.docs[0].versions[0].downloadURL
+Grabbing Before 2022-02-17T11%3A00%3A00Z
+Written all of 11.json
+com.google.gson.stream.MalformedJsonException: Expected ':' at line 103 column 35 path $.docs[0].versions[0].diffs[2].paritySummary.paritySummary.
+Grabbing Before 2022-02-17T10%3A00%3A00Z
+Written all of 12.json
+JSON document was not fully consumed.
+Grabbing Before 2022-02-17T09%3A00%3A00Z
+Written all of 13.json
+com.google.gson.stream.MalformedJsonException: Unterminated object at line 88 column 39 path $.docs[0].versions[0].previewURL
+Grabbing Before 2022-02-17T08%3A00%3A00Z
+Written all of 14.json
+com.google.gson.stream.MalformedJsonException: Expected ':' at line 100 column 19 path $.docs[1].,
+                
+Grabbing Before 2022-02-17T07%3A00%3A00Z
+Written all of 15.json
+com.google.gson.stream.MalformedJsonException: Expected ':' at line 58 column 20 path $.docs[0].versions[0].diffs[0].paritySummary.f119042f"
+Grabbing Before 2022-02-17T06%3A00%3A00Z
+Written all of 16.json
+com.google.gson.stream.MalformedJsonException: Expected ':' at line 106 column 22 path $.docs[1].versions[0].uploader.
+Grabbing Before 2022-02-17T05%3A00%3A00Z
+Written all of 17.json
+com.google.gson.stream.MalformedJsonException: Expected ':' at line 100 column 52 path $.docs[1].stats.upvot2022-02-17T04:50:02.391079Z
+Grabbing Before 2022-02-17T04%3A00%3A00Z
+Written all of 18.json
+com.google.gson.stream.MalformedJsonException: Unterminated object at line 91 column 55 path $.docs[0].updatedAt
+Grabbing Before 2022-02-17T03%3A00%3A00Z
+Written all of 19.json
+com.google.gson.stream.MalformedJsonException: Expected ':' at line 88 column 13 path $.docs[1].metadata.I
+Grabbing Before 2022-02-17T02%3A00%3A00Z
+Written all of 20.json
+JSON document was not fully consumed.
+Grabbing Before 2022-02-17T01%3A00%3A00Z
+Written all of 21.json

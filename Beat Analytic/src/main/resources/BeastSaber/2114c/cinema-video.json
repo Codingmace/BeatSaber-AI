@@ -1,0 +1,38 @@
+{
+  "videoID": "EMSgwOH8N_g",
+  "title": "1 Minute of pain",
+  "author": "Various",
+  "videoFile": "1 Minute of pain.mp4",
+  "duration": 75,
+  "offset": 0,
+  "loop": false,
+  "configByMapper": true,
+  "screenPosition": {
+    "x": 0.0,
+    "y": 12.4,
+    "z": 100.0
+  },
+  "colorCorrection": {
+    "saturation": 1.1,
+    "gamma": 0.9
+  },
+  "environment": [
+    {
+      "name": "RocketArena",
+      "active": false
+    },
+    {
+      "name": "RocketGateLight",
+      "position": {
+        "x": 0.0,
+        "y": -3.8,
+        "z": 98.0
+      },
+      "scale": {
+        "x": 3.5,
+        "y": 1.0,
+        "z": 4.8
+      }
+    }
+  ]
+}
