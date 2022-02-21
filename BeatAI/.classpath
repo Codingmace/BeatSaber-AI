@@ -30,5 +30,14 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Maste/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" sourcepath="C:/Users/Maste/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="commons-logging"/>
+			<attribute name="maven.artifactId" value="commons-logging"/>
+			<attribute name="maven.version" value="1.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -6,6 +6,19 @@
   <name>BeatSaber AI</name>
   <description>Trying to get to the point where I can automatically create based on songs.</description>
   
+  
+  <build>
+    <finalName>gtmapi</finalName>
+    <resources>
+        <resource>
+            <directory>src/main/resources</directory>
+            <excludes>
+                <exclude>**</exclude>
+            </excludes>
+        </resource>
+    </resources>
+</build>
+
   <dependencies>
   <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
 	<dependency>

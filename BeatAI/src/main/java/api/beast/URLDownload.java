@@ -81,10 +81,6 @@ public class URLDownload {
 	private static String setupDirs() {
 		String results = "";
 		String endl = "\n";
-		// src/main/resources/eventLogs/Event
-		// src/main/resources/BeastSaber/
-		// 	Path dest = Paths.get(baseFolder + "Delete/" + zipFile + ".zip");
-		// "src/main/resources/html/"
 		String basePath = "src/main/resources/";
 		File f1 = new File(basePath + "eventLogs");
 		File f2 = new File(basePath + "BeastSaber");

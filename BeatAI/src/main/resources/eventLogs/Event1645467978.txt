@@ -1,0 +1,33 @@
+eventLogs Folder Exists
+BeastSaber Folder Exists
+html Folder Exists
+Delete Folder Exists
+
+Downloading From page 574 to 2897
+Done downloading page 574
+Key: 1a0b1 download is successful
+Key: 1a0b1 unzip is successful
+Key: 1a0b0 download is successful
+Key: 1a0b0 unzip is successful
+Key: 1a0af download is successful
+Key: 1a0af unzip is successful
+Key: 1a0ae download is successful
+Key: 1a0ae unzip is successful
+Key: 1a0ac download is successful
+Key: 1a0ac unzip is successful
+Key: 1a0aa download is successful
+Key: 1a0aa unzip is successful
+Key: 1a0a9 download is successful
+Key: 1a0a9 unzip is successful
+Key: 1a0a7 download is successful
+Key: 1a0a7 unzip is successful
+Key: 1a0a5 download is successful
+Key: 1a0a5 unzip is successful
+Key: 1a0a3 download is successful
+Key: 1a0a3 unzip is successful
+Key: 1a0a2 download is successful
+Key: 1a0a2 unzip is successful
+Key: 1a0a0 download is successful
+Key: 1a0a0 unzip is successful
+Key: 1a09f download is successful
+Key: 1a09f unzip is successful

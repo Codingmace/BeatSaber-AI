@@ -25,6 +25,7 @@ public class mainGrab {
 	 * Grabs the Map based on the ID
 	 */
 	public static void main(String[] args) throws Exception {
+		String writtingDirs  = setupDirs();
 		long ts = System.currentTimeMillis() / 1000;
 		String eventFile = "src/main/resources/eventLogs/Call" + ts + ".txt";
 		int con = 13545;
@@ -87,7 +88,55 @@ public class mainGrab {
 		}
 
 	}
-
+	/*
+	 * Creates the default directories to make sure of no issues
+	 */
+	private static String setupDirs() {
+		String results = "";
+		String endl = "\n";
+		String basePath = "src/main/resources/";
+		File f1 = new File(basePath + "eventLogs");
+		File f2 = new File(basePath + "BeatSaver");
+		File f3 = new File(basePath + "Individual");
+		File f4 = new File(basePath + "Delete");
+		if(f1.exists()) {
+			results += "eventLogs Folder Exists" + endl;
+		} else {
+			if(f1.mkdir()) {
+				results += "creating eventLogs Folder" + endl;				
+			} else {
+				results += "Problem creating eventLogs Folder" + endl;
+			}
+		}
+		if(f2.exists()) {
+			results += "BeatSaver Folder Exists" + endl;
+		} else {
+			if(f2.mkdir()) {
+				results += "creating BeatSaver Folder" + endl;				
+			} else {
+				results += "Problem creating BeatSaver Folder" + endl;
+			}
+		}
+		if(f3.exists()) {
+			results += "Individual Folder Exists" + endl;
+		} else {
+			if(f3.mkdir()) {
+				results += "creating Individual Folder" + endl;				
+			} else {
+				results += "Problem creating Individual Folder" + endl;
+			}
+		}
+		if(f4.exists()) {
+			results += "Delete Folder Exists" + endl;
+		} else {
+			if(f4.mkdir()) {
+				results += "creating Delete Folder" + endl;				
+			} else {
+				results += "Problem creating Delete Folder" + endl;
+			}
+		}
+		return results;
+	}
 	private static boolean downloadZip(String key, String zipName) {
 		String baseURL = "https://na.cdn.beatsaver.com/";
 		String pageUrl = baseURL + zipName;
