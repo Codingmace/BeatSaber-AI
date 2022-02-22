@@ -1,6 +1,7 @@
 package refine;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -8,28 +9,22 @@ import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Arrays;
 
-public class JavaDeleteDirectory {
+public class DeleteBigDirectory {
 
 	public static void main(String[] args) throws Exception {
 		int bottomThreshold = 2000000; // 2MB
 		int topThreshold = 25000000; // 25MB
 
-		File dir = new File("src/test/resources/BeatSaber");
+		File dir = new File("Z:\\BS Files\\BeatSaver\\");
 		System.out.println(dir.toString());
 		File listMaps[] = dir.listFiles(); // individual maps
 		System.out.println(Arrays.toString(listMaps));
 		boolean deleteFolder[] = new boolean[listMaps.length];
 		for (int i = 0; i < listMaps.length; i++) {
-			if (isLarger(listMaps[i].listFiles(), bottomThreshold)) {
-				System.out.println("That is a valid mapping so far or threw an error");
-				// Remove files not needed
-				// Rename files that are shit named
-			} else { // Not larger so Delete
-				System.out.println("That doesn't work");
+			if (isTooLarge(listMaps[i].listFiles(), topThreshold)) {
+				// System.out.println("deleting this one");
 				deleteFolder[i] = true;
 			}
-			// If are remove all the files that are not needed
-			// In addition rename files that are named stupidly.
 		}
 
 		/* check that the verify folder exists */
@@ -44,13 +39,20 @@ public class JavaDeleteDirectory {
 				System.out.println("Can't create the folder. We have a big issue.");
 			}
 		}
+		FileWriter fw = new FileWriter(new File("my file.txt"));
 		for (int i = 0; i < deleteFolder.length; i++) {
 			if (deleteFolder[i]) {
-				System.out.println("delete the folder " + listMaps[i].getName());
-				deleteFold(listMaps[i]);
-			} else {
-				System.out.println("delete unwanted files");
-				System.out.println("Move only wanted ???");
+				fw.write("delete the folder " + listMaps[i].getName());
+				fw.flush();
+//				System.out.println("delete the folder " + listMaps[i].getName());
+				try {
+					deleteFold(listMaps[i]);
+				} catch(Exception e ) {
+					System.out.println(e.getMessage());
+				}
+			//} else {
+				//System.out.println("delete unwanted files");
+				//System.out.println("Move only wanted ???");
 				// Part of the other program
 			}
 		}
@@ -59,12 +61,19 @@ public class JavaDeleteDirectory {
 	private static void deleteFold(File file) throws IOException {
 		File files[] = file.listFiles();
 		for (File curFile : files) {
-			Files.delete(Paths.get(curFile.toURI()));
+			if(curFile.isFile()) {
+				Files.delete(Paths.get(curFile.toURI()));
+			} else { // Is directory
+				deleteFold(curFile);
+			}
 		}
 		Files.delete(Paths.get(file.toURI()));
 	}
 
-	private static boolean isLarger(File files[], int threshold) {
+	private static boolean isTooLarge(File files[], int threshold) {
+		if(files == null) {
+			return false;
+		}
 		for (File curFile : files) {
 			Path curPath = Paths.get(curFile.getAbsolutePath());
 			try {
@@ -75,7 +84,7 @@ public class JavaDeleteDirectory {
 				}
 			} catch (IOException e) {
 				System.out.println(e.getMessage());
-				return true;
+				return false;
 			}
 		}
 		return false;

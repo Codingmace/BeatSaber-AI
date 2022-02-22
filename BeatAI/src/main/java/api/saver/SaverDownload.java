@@ -28,7 +28,7 @@ public class SaverDownload {
 		String writtingDirs = setupDirs();
 		long ts = System.currentTimeMillis() / 1000;
 		String eventFile = "src/main/resources/eventLogs/Call" + ts + ".txt";
-		int con = 15106;
+		int con = 23826;
 		String endl = "\n";
 		FileWriter fw = new FileWriter(new File(eventFile));
 		fw.write(writtingDirs + endl);

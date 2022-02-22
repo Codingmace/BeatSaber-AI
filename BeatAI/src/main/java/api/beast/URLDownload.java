@@ -30,7 +30,7 @@ public class URLDownload {
 		String endl = "\n";
 		fw.write(writtingDirs + endl);
 		/* Download the HTML */
-		int startPage = 1113;
+		int startPage = 1;
 		int endPage = 2897;
 		String baseUrl = "https://bsaber.com/songs/new/page/";
 		fw.write("Downloading From page " + startPage + " to " + endPage + endl);
