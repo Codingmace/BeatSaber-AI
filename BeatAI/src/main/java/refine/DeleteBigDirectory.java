@@ -13,9 +13,9 @@ public class DeleteBigDirectory {
 
 	public static void main(String[] args) throws Exception {
 		int bottomThreshold = 2000000; // 2MB
-		int topThreshold = 25000000; // 25MB
+		int topThreshold = 20000000; // 20MB
 
-		File dir = new File("Z:\\BS Files\\BeatSaver\\");
+		File dir = new File("Z:\\BS Files\\Beast1\\");
 		System.out.println(dir.toString());
 		File listMaps[] = dir.listFiles(); // individual maps
 		System.out.println(Arrays.toString(listMaps));
@@ -39,10 +39,11 @@ public class DeleteBigDirectory {
 				System.out.println("Can't create the folder. We have a big issue.");
 			}
 		}
-		FileWriter fw = new FileWriter(new File("my file.txt"));
+		long ts = System.currentTimeMillis() / 1000;
+		FileWriter fw = new FileWriter(new File("Big " + ts +  " .txt"));
 		for (int i = 0; i < deleteFolder.length; i++) {
 			if (deleteFolder[i]) {
-				fw.write("delete the folder " + listMaps[i].getName());
+				fw.write("delete the folder " + listMaps[i].getName() + "\n");
 				fw.flush();
 //				System.out.println("delete the folder " + listMaps[i].getName());
 				try {

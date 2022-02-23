@@ -28,7 +28,7 @@ public class SaverDownload {
 		String writtingDirs = setupDirs();
 		long ts = System.currentTimeMillis() / 1000;
 		String eventFile = "src/main/resources/eventLogs/Call" + ts + ".txt";
-		int con = 23826;
+		int con = 76772; // 76772
 		String endl = "\n";
 		FileWriter fw = new FileWriter(new File(eventFile));
 		fw.write(writtingDirs + endl);
@@ -36,7 +36,7 @@ public class SaverDownload {
 		while (con <= 2238032) {
 			String baseUrl = "https://api.beatsaver.com/maps/id/";
 			baseUrl += Integer.toHexString(con);
-			String curFold = "src/main/resources/BeatSaver/"; // Where Putting the zip files
+//			String curFold = "src/main/resources/BeatSaver/"; // Where Putting the zip files
 			fw.write("Grabbing ID: " + Integer.toHexString(con) + endl);
 			Entry entity = new Entry();
 			fw.flush();
@@ -85,7 +85,7 @@ public class SaverDownload {
 				}
 			} catch (Exception e) {
 				fw.append(e.getMessage() + endl);
-				System.out.println("FUCK");
+				//System.out.println("FUCK");
 			}
 		}
 
@@ -144,7 +144,8 @@ public class SaverDownload {
 	private static boolean downloadZip(String key, String zipName) {
 		String baseURL = "https://na.cdn.beatsaver.com/";
 		String pageUrl = baseURL + zipName;
-		String fold = "src/main/resources/BeatSaver/";
+		String fold = "Z:\\BS Files\\BeatSaver\\";
+//		String fold = "src/main/resources/BeatSaver/";
 		String filename = fold + key + ".zip";
 		try {
 			BufferedInputStream in = new BufferedInputStream(new URL(pageUrl).openStream());
@@ -165,7 +166,8 @@ public class SaverDownload {
 	}
 
 	private static boolean unZip(String zipFile) {
-		String baseFolder = "src/main/resources/BeatSaver/";
+		String baseFolder = "Z:\\BS Files\\BeatSaver\\";
+//		String baseFolder = "src/main/resources/BeatSaver/";
 		String source = baseFolder + zipFile + ".zip";
 		String target = baseFolder + zipFile;
 		try {
@@ -196,7 +198,8 @@ public class SaverDownload {
 	}
 
 	private static boolean deleteZip(String zipFile) {
-		String baseFolder = "src/main/resources/BeatSaver/";
+		String baseFolder = "Z:\\BS Files\\BeatSaver\\";
+//		String baseFolder = "src/main/resources/BeatSaver/";
 		Path source = Paths.get(baseFolder + zipFile + ".zip");
 		try {
 			Files.delete(source);
