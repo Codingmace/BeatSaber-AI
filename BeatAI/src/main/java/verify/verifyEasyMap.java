@@ -13,6 +13,6 @@ public class verifyEasyMap {
 	 * used, they should be easy to avoid with no simultaneous notes
 	 */
 	public static void main(String[] args) {
-
+		
 	}
 }

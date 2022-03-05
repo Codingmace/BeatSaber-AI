@@ -32,3 +32,7 @@ hs_err_pid*
 *.wav
 vocal-remover-v1.zip
 README.md
+
+# Other
+*.pyc
+*.suo
