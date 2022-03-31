@@ -57,7 +57,6 @@ https://pypi.org/project/spotdl/?msclkid=8426a3c8aeb711ec8ac0f8907caa2f10
 '''
 # Be Able to search for the file through application
 
-
 ''' Search Documentation
 https://developer.spotify.com/documentation/web-api/reference/#/operations/search
 q
