@@ -14,25 +14,26 @@ window.geometry("1000x500")
 
 #  Adding all the entries
 my_entry0 = tk.Entry(frame, width = 20)
-my_entry0.insert(0,'ID')
+my_entry0.insert(0,'Filename')
 my_entry0.pack(padx = 5, pady = 0, side=tk.LEFT)
  
 my_entry1 = tk.Entry(frame, width = 15)
-my_entry1.insert(1,'Name')
+my_entry1.insert(1,'Filepath')
 my_entry1.pack(padx = 5, pady = 0, side = tk.LEFT)
 
 my_entry2 = tk.Entry(frame, width = 20)
-my_entry2.insert(2,'Song Author')
+my_entry2.insert(2,'File Type')
 my_entry2.pack(padx = 5, pady = 0, side=tk.LEFT)
  
 my_entry3 = tk.Entry(frame, width = 15)
-my_entry3.insert(3,'Level Author')
+my_entry3.insert(3,'Genre')
 my_entry3.pack(padx = 5, pady = 0, side = tk.LEFT)
 
 my_entry4 = tk.Entry(frame, width = 20)
-my_entry4.insert(4,'Uploader')
+my_entry4.insert(4,'Valid')
 my_entry4.pack(padx = 5, pady = 0, side=tk.LEFT)
- 
+
+'''
 my_entry5 = tk.Entry(frame, width = 15)
 my_entry5.insert(5,'BPM')
 my_entry5.pack(padx = 5, pady = 0, side = tk.LEFT)
@@ -68,7 +69,7 @@ my_entry12.pack(padx = 5, pady = 0, side = tk.LEFT)
 my_entry13 = tk.Entry(frame, width = 15)
 my_entry13.insert(13,'URL??')
 my_entry13.pack(padx = 5, pady = 0, side = tk.LEFT)
-
+'''
 
 
 Button = tk.Button(frame, text = "Submit", command = retrieve)

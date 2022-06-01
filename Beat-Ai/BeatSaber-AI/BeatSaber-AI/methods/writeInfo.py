@@ -1,10 +1,10 @@
 import json
 import librosa
-from pychorus.helpers import find_and_output_chorus
+from chorus.helpers import find_and_output_chorus
 
 def readInfo():
     # Opening JSON file
-    with open('info.json', 'r') as openfile:
+    with open('resources/info.json', 'r') as openfile:
         # Reading from json file
         json_object = json.load(openfile)
     return json_object
@@ -31,9 +31,9 @@ def writeJson(curFold, json_data):
 
 def writeInfoMain():
     # Assuming the folder has song and already Written
-    curFold = "./"
+    curFold = "./resources/"
     data = readInfo()
-    songFile = curFold + 'song.egg'
+    songFile = curFold + 'legend.egg'
     editor = "myUsername"
     data['_songName'] = 'songName'
     data['_songAuthorName'] = 'songAuthorName'
@@ -54,11 +54,12 @@ def writeInfoMain():
             foundClip = True
         if duration == 1:
             foundClip = True
+    print(startSecond, duration)
     data['_previewStartTime'] = startSecond
     data['_previewDuration'] = duration
     data['_songTimeOffset'] = 0 # Manually can set
     data['_customData']['_editors']['_lastEditedBy'] = editor # Verify this works
-    diffInclude = [True,True,True,False,False]
+    diffInclude = [False,False,True,False,False]
     # Easy, Normal, Hard, Expert, ExpertPlus
     data = refineDiff(diffInclude, data)
     try:
@@ -66,3 +67,5 @@ def writeInfoMain():
         print("Info file has been written")
     except Exception:
         print("Exception has happened writting info file")
+
+writeInfoMain()

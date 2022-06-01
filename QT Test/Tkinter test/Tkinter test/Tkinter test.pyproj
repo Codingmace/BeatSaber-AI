@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f21ec6d8-489a-44fe-aa3c-bd5d5452e311</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>main.py</StartupFile>
+    <StartupFile>filenames.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,6 +27,7 @@
     <Compile Include="entryField.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="filenames.py" />
     <Compile Include="listBox_1.py" />
     <Compile Include="listBox.py">
       <SubType>Code</SubType>
